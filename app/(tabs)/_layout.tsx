@@ -20,18 +20,6 @@ export default function TabLayout() {
           }}
         >
           <Tabs.Screen
-            name="explore-nodes/index"
-            options={{
-              title: "Explore Nodes",
-              tabBarIcon: ({ color, focused }) => (
-                <TabBarIcon
-                  name={focused ? "code-slash" : "code-slash-outline"}
-                  color={color}
-                />
-              ),
-            }}
-          />
-          <Tabs.Screen
             name="edit-node/index"
             options={{
               title: "Edit node",

@@ -4,6 +4,7 @@ import { StyleSheet, TextInput } from "react-native";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
+import FileExplorer from "@/components/fileExplorer/FileExplorer";
 
 export default function SettingsView() {
   return (
@@ -17,6 +18,7 @@ export default function SettingsView() {
         <ThemedText type="title">Explore nodes</ThemedText>
       </ThemedView>
       <ThemedText>To .</ThemedText>
+      <FileExplorer />
       <TextInput></TextInput>
     </ParallaxScrollView>
   );

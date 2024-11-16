@@ -4,6 +4,7 @@ import { StyleSheet, TextInput } from "react-native";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
+import FileEditor from "@/components/fileEditor/FileEditor";
 
 export default function EditNodeView() {
   return (
@@ -16,7 +17,7 @@ export default function EditNodeView() {
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Edit node</ThemedText>
       </ThemedView>
-      <ThemedText>To .</ThemedText>
+      <FileEditor filePath="/Documents/Project/index.js" />
       <TextInput></TextInput>
     </ParallaxScrollView>
   );
